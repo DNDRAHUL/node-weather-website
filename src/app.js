@@ -72,7 +72,7 @@ const  pD=path.join(__dirname,'../public'),
   )
     app.get('/about',(req,res)=>{
           res.render('about',{
-          title:'About ME',      
+          title:'About Me',      
           name:'Rahul Yadav'
         }
       )
