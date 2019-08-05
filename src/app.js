@@ -1,5 +1,6 @@
 const path=require('path')
 const  express=require('express')
+const port =process.env.PORT||3000
 const  app=express()
 const  hbs=require('hbs')
 const forecast=require('../src/utils/forecast')
@@ -89,7 +90,7 @@ const  pD=path.join(__dirname,'../public'),
            ErrorMessage:'Page Not Found'
     })
   })
-    app.listen(300,()=>{  
-        console.log('server listening on port 300');
+    app.listen(port,()=>{  
+        console.log('server listening on port'+port);
       }
     ) 

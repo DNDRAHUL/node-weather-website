@@ -8,7 +8,7 @@
     const location=search.value
     messageOne.textContent='loading....' 
     messageTwo.textContent='  '
-    fetch('http://localhost:300/weather?address='+location).then((response)=>{ 
+    fetch('/weather?address='+location).then((response)=>{ 
       response.json().then((data)=>{ 
          if(data.error)
          {
